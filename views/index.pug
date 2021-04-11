@@ -1,9 +1,9 @@
 extends layout
-
+ 
 block content
   h1= title
-  p  Life is what happens when you're busy making other plans.
-   button(type='button' class='btn btn-primary' onclick="update()") Press Me
+  p WA Assignment 11
+  button(type='button' class='btn btn-primary' onclick="update()") Press Me
   div(id="target") Display
     script.
       var client_count = 0
@@ -11,4 +11,4 @@ block content
         client_count ++;
         document.getElementById("target").innerHTML = `Value now ${client_count}`
       }
- a(href="horses") go to graffie
+    a(href="graffie") go to graffie 

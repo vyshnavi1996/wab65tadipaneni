@@ -2,7 +2,8 @@ extends layout
  
 block content
   h1= title
-  - let graffies=[{graffiename:"Alyssa's choice",habitat:"wood land",classification:"Chordata",price:10000},{graffiename:"Apollo",habitat:"cliffs",classification:"Animalia",price:15000},{graffiename:"Morgan",habitat:"cooling",classification:"Persian",price:20000}]
+  //- - let graffies=[{graffiename:"Alyssa's choice",habitat:"wood land",classification:"Chordata",price:10000},{graffiename:"Apollo",habitat:"cliffs",classification:"Animalia",price:15000},{graffiename:"Morgan",habitat:"cooling",classification:"Persian",price:20000}]
+  - let graffies = results;
   div(class="container-fluid mt-3")
   div(class="row")
     each graffie,index in graffies
