@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h1= title
+
+  - let graffieid = toShow._id
+  - let graffiename= toShow.graffiename
+  - let habitat = toShow.habitat
+  - let classification = toShow.classification
+  - let price = toShow.price
+  div
+    div.row
+      div(class='graffieAttr mr-3') graffie ID is:
+      div #{graffieid}
+    div.row
+      div(class='graffieAttr mr-3') graffie name is:
+      div #{graffiename}
+    div.row
+      div(class='graffieAttr mr-3') habitat:
+      div #{habitat}
+    div.row
+      div(class='graffieAttr mr-3') classification:
+      div #{classification}
+    div.row
+      div(class='graffieAttr mr-3') price:
+      div #{price}
+

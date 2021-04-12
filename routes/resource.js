@@ -17,4 +17,7 @@ router.put('/resource/graffie/:id', graffie_controller.graffie_update_put);
 router.get('/resource/graffie/:id', graffie_controller.graffie_detail);
 // GET request for list of all graffie items.
 router.get('/resource/graffie', graffie_controller.graffie_list);
+/* GET detail graffie page */
+router.get('/detail', graffie_controller.graffie_view_one_Page);
+
 module.exports = router;
